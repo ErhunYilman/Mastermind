@@ -1,0 +1,183 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+	top: 0px;
+	margin-right: 20px;
+  margin-left: 20px;
+}
+
+.switch input {display:none;}
+
+.slider {
+	display: block; overflow: hidden; cursor: pointer;
+  height: 36px; padding: 0; line-height: 36px;
+  border: 2px solid #E3E3E3; border-radius: 36px;
+  background-color: #ecf0f1;
+  transition: background-color 0.3s ease-in;
+
+}
+
+.slider:before {
+	content: "";
+	 display: block; width: 36px; margin: 0px;
+	 background: #90A4AE;
+	 position: absolute; top: 0; bottom: 0;
+	 right: 22px;
+	 border: 2px solid #E3E3E3; border-radius: 36px;
+	 transition: all 0.3s ease-in 0s;
+}
+
+input:checked + .slider {
+  background-color: #ecf0f1;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.dark-mode {
+    background: #2c3e50;
+		color: white;
+}
+
+.dark-mode .userButtons{
+  background-color: #546E7A;
+  box-shadow: none;
+}
+
+.dark-mode .basicRowButton{
+  background-color: #757575;
+}
+
+ .darkSwitch{
+   display: inline-block;
+   margin-left: 30px;
+   position: relative;
+   top: -10px;
+ }
+
+
+
+.changeBg{
+	margin-bottom: 15px;
+	outline: none;
+	border: 0px;
+	border-radius: 0;
+	-webkit-box-shadow: 0 0 0px 1000px white inset;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.container {
+	max-width: 400px;
+	height: 800px;
+	margin: 0 auto;
+
+}
+.border{
+	box-shadow: 0 0 10px #ecf0f1;
+}
+
+.container h1 {
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 0 0 10px 25px !important;
+}
+
+.color {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 0px;
+}
+
+.basicRowButton {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 0px;
+}
+
+.gameContent {
+	margin-top: 20px;
+}
+
+hr.customLine {
+	margin-left: 0px!important;
+	width: 330px;
+}
+
+.buttons button{
+	box-shadow: 0 2px 5px rgba(0,0,0,0.16), 2px 2px 2px rgba(0,0,0,0.23);
+}
+
+#greenButton {
+	background-color: #2ecc71;
+}
+#greenButton:focus {
+	background-color:  #27ae60;
+}
+#redButton {
+	background-color: #e74c3c;
+}
+#redButton:focus {
+	background-color:  #c0392b;
+}
+#blueButton {
+	background-color: #3498db;
+}
+#blueButton:focus {
+	background-color:  #2980b9;
+}
+#yellowButton {
+	background-color: #f1c40f;
+}
+#yellowButton:focus {
+	background-color:  #f39c12;
+}
+#orangeButton {
+	background-color: #e67e22;
+}
+#orangeButton:focus {
+	background-color:  #d35400;
+}
+#blackButton {
+	background-color: #000;
+}
+
+
+.userButtons {
+	width: 100px;
+	height: 50px;
+	border: 0px;
+	border-radius: 0;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px;
+  background: #1abc9c;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  outline: none;
+}
+
+.userButtonsRow {
+	padding-left: 5px;
+    padding-top: 10px;
+
+}
